@@ -35,6 +35,14 @@ class UsersController < ApplicationController
     end
   end
   
+  def followings
+    @user.following = user.following
+  end
+ 
+  def followers
+    @user.followers = user.followers
+  end
+  
   private
 
   def user_params
@@ -56,4 +64,5 @@ class UsersController < ApplicationController
       redirect_to login_url
     end
   end
+ 
 end
