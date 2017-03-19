@@ -1,5 +1,5 @@
 class AddChiikiToUsers < ActiveRecord::Migration
   def change
-    add_column :users, :chiiki, :integer
+    add_column :users, :chiiki, :string
   end
 end
